@@ -51,23 +51,49 @@ h2{
     background-color: rgb(20, 224, 58);
 }
 
-.strbtn{  
+.strbtn {
+    position: relative;
+
     opacity: 0.8;
-    color: white;
+    color: #0ef;
     margin-top: 1rem;
     font-size: 1.8rem;
-    border-radius: 15px;
-    border: 5px solid white ;
-    background-color: rgb(20, 224, 58);
-    padding: 0.5rem;
-    font-family: 'Playpen Sans', cursive;
-} 
+    border-radius: 10px;
+    border: 3px solid #0ef;
+    font-weight: 500;
+    /* background-color: rgb(20, 224, 58);  */
+    background: transparent;
+    padding: 0.5rem; 
+    letter-spacing: 5px;
+    font-family: 'Playpen Sans', cursive; 
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+    z-index: 1;
+}
 
-.strbtn:hover{
-    opacity: 1; 
+.strbtn:hover {
+    opacity: 1;
     color: black;
- }
+    box-shadow: 0 0 5px #0ef, 0 0 5px #0ef inset;
+}
 
+.strbtn::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #0ef;
+    box-shadow: 0 0 20px #0ef;
+    z-index: -1;
+    transition: .1s;
+}
+
+.strbtn:hover::after {
+    left: 0;
+    width: 100%;
+}
 
 @media(max-width:376px){
 
