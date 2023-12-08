@@ -1,0 +1,136 @@
+body{
+    text-align: center;
+    background-color: black;
+}
+h1{ font-size: 50px;
+    font-family: 'Bungee Spice', sans-serif;
+    text-shadow: 5px 5px 5px #819ff9;
+}
+h2{
+    margin: 0;
+    font-family: 'Playpen Sans' , Montse;
+    color: white;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+.btn{
+    height: 12.5rem;
+    width: 12.5rem;
+    margin: 1rem .8125rem;
+    border-radius: 30%; 
+    border: 3px solid white;
+}
+
+.red{
+    background-color: #d95980;
+}
+
+.green{
+    background-color: #9c63c0;
+    
+}
+
+.blue{
+    background-color: #819ff9;
+}
+
+.yellow{
+   
+    background-color: #f99b45;
+}
+
+.flash{
+    background-color: white;
+} 
+
+.userFlash{
+    background-color: rgb(20, 224, 58);
+}
+
+.strbtn{  
+    opacity: 0.8;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    border-radius: 15px;
+    border: 5px solid white ;
+    background-color: rgb(20, 224, 58);
+    padding: 0.5rem;
+    font-family: 'Playpen Sans', cursive;
+} 
+
+.strbtn:hover{
+    opacity: 1; 
+    color: black;
+ }
+
+
+@media(max-width:376px){
+
+    
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        
+    }
+    .btn{
+        height: 8.5rem;
+        width: 8.5rem;
+        margin: .6125rem .5125rem;
+        border-radius: 30%;
+    }
+
+    .strbtn{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        border: none;
+        background-color: aquamarine;
+        padding: 0.5rem;
+    }
+}
+
+@media(max-width:321px){
+
+    
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        
+    }
+    .btn{
+        height: 7.5rem;
+        width: 7.5rem;
+        margin: .8rem .5125rem;
+        border-radius: 30%;
+    }
+
+    .strbtn{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        border: none;
+        background-color: aquamarine;
+        padding: 0.5rem;
+    }
+}
